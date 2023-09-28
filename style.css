@@ -1,0 +1,91 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    box-sizing: border-box;
+    overflow-x: hidden;
+  
+}
+.header{
+    text-align: center;
+    height: 20vh;
+    width: 100vw;
+    margin-top: 10px;
+    
+}
+.header h1{
+    margin-top: 25px;
+}
+.header h5{
+    margin-top: 15px;
+}
+.header img{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    left: 135px;
+    top: 15px;
+}
+.header .img2{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    left: 1020px;
+}
+
+.menubar{
+    background-color: black;
+    border: solid;
+    text-align: center;
+}
+.menubar ul{
+    display: inline-flex;
+    color: white;
+    list-style: none;
+}
+.menubar ul li{
+width: 120px;
+margin:10px ;
+padding: 10px;
+font-size: 15px;
+}
+.menubar ul li a{
+    text-decoration: none;
+    color: white;
+}
+ .active, .menubar ul li:hover{
+    background-color: rgb(93, 186, 121);
+    border-radius: 3px;
+}
+
+.submenu1{
+    display:none;
+}
+.menubar ul li:hover .submenu1{
+    display: block;
+    position: absolute;
+    background-color: aqua;
+    margin-top: 15px;
+    margin-left: -15px;
+
+}
+.menubar ul li:hover .submenu1 ul{
+    display: block;
+    margin:10px;
+}
+
+.menubar ul li:hover .submenu1 ul li{
+    width:200px;
+    padding: 10px;
+    border-bottom:1px dotted #fff;
+    border-radius: 0;
+    background: transparent;
+    text-align: left;
+}
+.menubar ul li:hover .submenu1 ul li a:hover
+{
+    color: rgb(239, 24, 12);
+}
+
+

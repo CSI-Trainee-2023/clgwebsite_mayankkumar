@@ -1,27 +1,33 @@
+/* keeping padding and margin zero for the entire web page */
 *{
     padding: 0;
     margin: 0;
 }
+/* no horizontal scroll bar*/
 body{
     box-sizing: border-box;
     overflow-x: hidden;
   
 }
-
+/* fixing height width alignment of the top header*/
 .header{
     text-align: center;
     height: 20vh;
     width: 100vw;
-    margin-top: 10px;
-    
-    
+    margin-top: 10px; 
 }
+
+/*giving margin to header from top */
 .header h1{
     margin-top: 25px;
 }
+
+/*giving margin to sub-header from top */
+
 .header h5{
     margin-top: 15px;
 }
+/*fixing height width of the images in header and the alignment*/
 .header img{
     position: absolute;
     height: 100px;
@@ -29,42 +35,48 @@ body{
     left: 135px;
     top: 15px;
 }
+/*fixing height width of the images in header and their alignment*/
 .header .img2{
     position: absolute;
     height: 100px;
     width: 100px;
     left: 1020px;
 }
-
+/*setting layout of the menubar*/
 .menubar{
     background-color: black;
     border: solid;
     text-align: center;
     
 }
+/*setting layout of the menubar list and display them in a line*/
 .menubar ul{
     display: inline-flex;
     color: white;
     list-style: none;
 }
+/*setting width padding and font size of list items*/
 .menubar ul li{
 width: 120px;
 margin:10px ;
 padding: 10px;
 font-size: 15px;
 }
+/*removing underline and style of list items*/
 .menubar ul li a{
     text-decoration: none;
     color: white;
 }
+/* adding hover effect on the menubar list items such that on hovering them they change their color to green */
  .active, .menubar ul li:hover{
     background-color: rgb(93, 186, 121);
     border-radius: 3px;
 }
-
+/*hiding sub menu*/
 .submenu1{
     display:none;
 }
+/*display sub menu in a block and changing layout*/
 .menubar ul li:hover .submenu1{
     display: block;
     position: absolute;
@@ -73,11 +85,12 @@ font-size: 15px;
     margin-left: -15px;
 
 }
+/*display sub menu list items in a block and changing layout*/
 .menubar ul li:hover .submenu1 ul{
     display: block;
     margin:10px;
 }
-
+/*display sub menu list items in a block and changing layout*/
 .menubar ul li:hover .submenu1 ul li{
     width:200px;
     padding: 10px;
@@ -86,21 +99,24 @@ font-size: 15px;
     background: transparent;
     text-align: left;
 }
+/*changing color to red to while hover on submenu list items */
 .menubar ul li:hover .submenu1 ul li a:hover
 {
     color: rgb(239, 24, 12);
 }
+/*setting height and width of main section about akgec*/
 .main1{
     width: 100vw;
     height: 80vh;
-    background-color: rgb(251, 251, 251);
-    background-color: rgb(180, 221, 221);
+    
 }
+/*accessing heading in about akgec and changing alyout */
 .main1 h1{
     text-align: center;
     text-decoration: underline;
     margin-top: 15px;
 }
+/*adusting height width and making float ion the left of the text and changing layout*/
 .main1 img{
     float: left;
     margin-top: 30px;
@@ -110,10 +126,12 @@ font-size: 15px;
     border-radius: 5px;
 
 }
+/*creating shadow effect on the image in about akgec*/
 .main1 img
 {
     box-shadow: 5px 5px 5px yellow;
 }
+/*paragraph layout*/
 .main1 p{
    margin-top: 25px;
    position: relative;
@@ -125,6 +143,7 @@ font-size: 15px;
    
 
 }
+/*creating a button named read more*/
 .main1 button{
     margin-left: 550px;
     padding: 5px;
@@ -134,9 +153,13 @@ font-size: 15px;
     background-color: rgb(139, 178, 178);
     border-radius: 8px;
     margin-top: 10px;
-    text-decoration: none;
     color: aliceblue;
    
+}
+/*removing link styling from the button to make it look normal*/
+.main1 button a{
+    text-decoration: none;
+    color:black;
 }
 .main2{
    display: flex;
@@ -149,29 +172,43 @@ font-size: 15px;
     text-align: center;
     border-top: solid;
 }
+/*creating a loyout of the heading placements*/
 #placements{
     text-align: center;
     margin: 30px;
     text-decoration: underline;
 }
+/*ajusting content under the heading placements*/
 .placement{
     text-align: center;
     font-size: 20px;
 }
+/*creating a smooth transition effects on the placement icons*/
 .main3{
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
+    transition: all;
+    transition-delay: 3s;
+    transition-duration: 2s;
+    transition-timing-function: linear;
 }
+/*creating a smooth transition effects on the placement icons*/
 .main4{
     display: flex;
     justify-content: space-between;
+    transition: all;
+    transition-delay: 1s;
+    transition-duration: 2s;
+    transition-timing-function: linear;
   
 }
+/* creating a hover effect such that on hover icons get magnified */
 .icon:hover{
     scale: 1.2;
     
 }
+/* setting height width bg color of the footer and making container flex in row */
 footer{
     width: 100%;
     height: 35vh;
@@ -179,15 +216,13 @@ footer{
     color: white;
     display: flex;
     justify-content: space-around;
-    padding-top: 10px;
-    
+    padding-top: 10px;    
 }
-.col2{
-    list-style: none;
-    
+/*important links under footer*/
+.impLinks{
+    color: white;
+    text-decoration: none;
 }
-
-
 
 
 
